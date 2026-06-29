@@ -16,7 +16,7 @@ async def send_message(context):
 
 if __name__ == '__main__':
     import os
-TOKEN = os.environ.get("TOKEN")
+    TOKEN = os.environ.get("TOKEN")
     app = Application.builder().token(TOKEN).build()
     
     app.add_handler(CommandHandler("start", start))
